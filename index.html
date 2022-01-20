@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ナベアツゲーム</title>
+    <!-- faviconの設定-->
+    <link rel="icon" href="/Nabeatsu_App/favicon.ico" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>世界のナベアツゲームに挑戦しよう！！<img src='アホ.jpg'></h1>
+    <p class="introduction">世界のナベアツゲームとは、掛け算による答えが3の倍数か3のつく数字である場合、あなたがアホであるということを判断するゲームです。</p>
+    <p class="requirements">条件</p>
+    <ul>
+        <li>数字は3桁であること。</li>
+        <li>同じ数字を使用しないこと。</li>
+    </ul>
+    
+    <form action="result.php" method="POST">
+        <p class="onenum">1つ目の数字</p>
+        <p class="secondnum">2つ目の数字</p><br>
+            <input class="first" type="number" name="first_num" min="100" max="999">
+        <p class="x">×</p>
+            <input class="second" type="number" name="second_num" min="100" max="999">
+        <p class="question">=??</p>
+            <input class="bottan" type="submit" value="結果を見る">
+    </form>
+
+</body>
+</html>
